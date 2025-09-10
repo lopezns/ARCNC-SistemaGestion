@@ -1,0 +1,246 @@
+/* Estructura principal */
+.register-container {
+  min-height: 100vh;
+  background-color: #1a2634;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.logo-text {
+  color: white;
+  font-size: 24px;
+}
+
+/* Caja del formulario */
+.register-box {
+  background-color: #2d4356;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-box h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* Inputs */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 14px;
+}
+
+/* Checkbox y política */
+.policy-group {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox-container input {
+  margin-right: 8px;
+}
+
+/* Botón registrar */
+.sign-in-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #1e2a38;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.sign-in-btn:hover {
+  background-color: #243b4e;
+}
+
+/* Link para login */
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link button {
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-link button:hover {
+  opacity: 0.8;
+}
+
+/* Botón link para ver políticas */
+.link-button {
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+}
+
+.link-button:hover {
+  opacity: 0.8;
+}
+
+/* Requisitos de contraseña */
+.password-requirements ul {
+  color: #a8b2d1;
+  font-size: 12px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.popup-content {
+  background: #2d4356; /* Color de fondo del popup */
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+}
+
+.popup-content h2 {
+  color: #ffffff; /* Color del texto del título */
+  margin-bottom: 15px;
+}
+
+.popup-content p {
+  color: #a8b2d1; /* Color del texto del contenido */
+  margin-bottom: 20px;
+}
+
+.close-popup {
+  background-color: #1e2a38; /* Color del botón de cerrar */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.close-popup:hover {
+  background-color: #243b4e; /* Color de fondo al pasar el mouse */
+}
+
+/* Mensajes de error */
+.error-message {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.loader-container {
+  width: 50px;
+  height: 50px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 10s infinite linear;
+}
+
+@keyframes rotateCube {
+  from {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+
+.logo-text {
+  color: white;
+  font-size: 24px;
+  animation: fadePulse 3s ease-in-out infinite;
+  max-width: 180px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@keyframes fadePulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.02);
+  }
+}
+
+.form-group label {
+  color: rgba(255,255,255,0.75) !important;
+}
