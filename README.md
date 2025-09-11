@@ -40,7 +40,7 @@ Esto asegura un sistema robusto para **almacenar, evaluar y retroalimentar el de
 
 1. Clonar el repositorio:
    ```bash
- git clone https://github.com/lopezns/ARCNC-SistemaGestion.git
+    git clone https://github.com/lopezns/ARCNC-SistemaGestion.git
 
  ## Autores
 
